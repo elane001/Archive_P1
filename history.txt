@@ -1,0 +1,38 @@
+  343  history | tail -n 16 >>history.txt
+  344  cd ..
+  345  ls
+  346  mkdir Archive_P1
+  347  cd Archive_P1/
+  348  git status
+  349  git init
+  350  git config --global user.name elane001
+  351  git config --global user.email elane@ucsb.edu
+  352  git add .
+  353  git commit -m "committing"
+  354  ls
+  355  echo "uh oh"
+  356  cd ..
+  357  ls
+  358  mv p1_basic_unix.tar.gz Archive_P1/p1_basic_unix.tar.gz
+  359  cd Archive_P1/
+  360  ls
+  361  echo "ok now lets try"
+  362  git add .
+  363  git commit -m "committing"
+  364  git push -u origin main
+  365  git remote add origin https://github.com/elane001/Archive_P1.git
+  366  git branch -M main
+  367  git push -u origin main
+  368  git pull https://github.com/elane001/Archive_P1.git
+  369  git config pull.rebase false
+  370  git pull https://github.com/elane001/Archive_P1.git
+  371  ls
+  372  echo "ok now lets try to push"
+  373  git push -u origin main
+  374  git config pull.rebase true
+  375  git pull https://github.com/elane001/Archive_P1.git
+  376  echo "ok how about now"
+  377  git pull https://github.com/elane001/Archive_P1.git
+  378  git push -u origin main
+  379  echo "wow that was complicated"
+  380  history | tail -n 38 >>history.txt
